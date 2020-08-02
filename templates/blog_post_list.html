@@ -1,0 +1,7 @@
+{% extends "parent.html" %}
+{% block head_title %} list of blog{% endblock %}
+{% block content %}
+    {% for object in object_list %}
+        <li>{{object.title}}</li>
+    {% endfor %}
+{% endblock %}
